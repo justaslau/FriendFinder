@@ -9,7 +9,7 @@ $("#form").submit(function(event) {
 	}
 	for (var i = 1; i <= 10; i++) {
 		var question = "#question" + i + " :selected";
-		newFriend.scores.push($(question).val());
+		newFriend.scores.push($(question).val());a
 	}
 	$.post("/api/friends", newFriend).then(function(data) {
 		var image = document.createElement("IMG");

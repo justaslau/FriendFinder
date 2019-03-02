@@ -1,3 +1,4 @@
+// Data file, default friends
 var path = require("path");
 var friends = [{
 
