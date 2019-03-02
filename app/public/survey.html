@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder Application</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+
+<body>
+   
+    <!-- user survey -->
+    <div class="container surveyCont">
+        <h2 class="mb-3">Tell Us About Yourself</h2>
+        <form id="form">
+            <div class="form-row mb-3">
+                <div class="col-md-6">
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control w-75" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="image">Photo Link</label>
+                    <input type="text" class="form-control w-75" id="image" placeholder="Link to image" required>
+                </div>
+            </div>
+
+            <div class="form-row mb-5">
+                <div class="col-md-6 mb-sm-3">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control w-75" id="age" placeholder="Enter your age" required>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="loc">Location</label>
+                    <input type="text" class="form-control w-75" id="loc" placeholder="Enter location" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="question1"><h4>Question 1</h4>You would rather watch a movie at home, instead of going to a movie theater.</label>
+                <select class="form-control w-25" id="question1" required>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question2"><h4>Question 2</h4>You would rather exercise instead of party.</label>
+                <select class="form-control w-25" id="question2" required>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question3"><h4>Question 3</h4>You like art more than sports.</label>
+                <select class="form-control w-25" id="question3" required>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question4"><h4>Question 4</h4>You think seafood is a suitable meal.</label>
+                <select class="form-control w-25" id="question4" required> 
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question5"><h4>Question 5</h4>You consider yourself an active person.</label>
+                <select class="form-control w-25" id="question5" required> 
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question6"><h4>Question 6</h4>You enjoy listening to country music.</label>
+                <select class="form-control w-25" id="question6" required>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question7"><h4>Question 7</h4>You consider yourself a spontaneous person.</label>
+                <select class="form-control w-25" id="question7" required> 
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question8"><h4>Question 8</h4>You would rather go eat a nice meal instead of go to a concert.</label>
+                <select class="form-control w-25" id="question8" required> 
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question9"><h4>Question 9</h4>You have a great sense of humor.</label>
+                <select class="form-control w-25" id="question9" required>
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question10"><h4>Question 10</h4>You like to speak your mind.</label>
+                <select class="form-control w-25" id="question10" required> 
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <!-- modal that displays the matched friend -->
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class='modal-title w-100 text-center'>FRIEND <i class="fab fa-searchengin"></i> FINDER</h3>
+            </div>
+            <div class="modal-body">
+                <h4 class='mb-4 text-center'>We've found a great friend for you!</h4>
+                <h3 id="modalName"></h3> 
+                <p></p>
+                <img id="modalImg" src="" class="img-fluid" alt="picture of new friend">
+                <p></p>
+                <h4 id="modalLocation"> </h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+<br>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
